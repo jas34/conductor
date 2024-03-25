@@ -31,8 +31,8 @@ import com.netflix.discovery.EurekaClient;
 @EnableConfigurationProperties(ClientProperties.class)
 public class ConductorClientAutoConfiguration {
 
-    @Autowired(required = false)
-    private EurekaClient eurekaClient;
+//    @Autowired(required = false)
+//    private EurekaClient eurekaClient;
 
     @Autowired(required = false)
     private List<Worker> workers = new ArrayList<>();
@@ -45,11 +45,11 @@ public class ConductorClientAutoConfiguration {
         return taskClient;
     }
 
-    @ConditionalOnMissingBean
-    @Bean
-    public AnnotatedWorkerExecutor annotatedWorkerExecutor(TaskClient taskClient) {
-        return new AnnotatedWorkerExecutor(taskClient);
-    }
+//    @ConditionalOnMissingBean
+//    @Bean
+//    public AnnotatedWorkerExecutor annotatedWorkerExecutor(TaskClient taskClient) {
+//        return new AnnotatedWorkerExecutor(taskClient);
+//    }
 
     @ConditionalOnMissingBean
     @Bean(initMethod = "init", destroyMethod = "shutdown")
@@ -62,7 +62,7 @@ public class ConductorClientAutoConfiguration {
                 .withUpdateRetryCount(clientProperties.getUpdateRetryCount())
                 .withTaskToDomain(clientProperties.getTaskToDomain())
                 .withShutdownGracePeriodSeconds(clientProperties.getShutdownGracePeriodSeconds())
-                .withEurekaClient(eurekaClient)
+//                .withEurekaClient(eurekaClient)
                 .build();
     }
 }

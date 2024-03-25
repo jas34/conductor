@@ -25,7 +25,7 @@ import com.netflix.conductor.client.http.TaskClient;
 import com.netflix.conductor.sdk.workflow.executor.task.AnnotatedWorkerExecutor;
 import com.netflix.conductor.sdk.workflow.executor.task.WorkerConfiguration;
 
-@Component
+//@Component
 public class ConductorWorkerAutoConfiguration
         implements ApplicationListener<ContextRefreshedEvent> {
 

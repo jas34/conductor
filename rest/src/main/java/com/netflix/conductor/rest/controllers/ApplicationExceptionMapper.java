@@ -34,8 +34,8 @@ import com.netflix.conductor.metrics.Monitors;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import jakarta.servlet.http.HttpServletRequest;
 
-@RestControllerAdvice
-@Order(ValidationExceptionMapper.ORDER + 1)
+//@RestControllerAdvice
+//@Order(ValidationExceptionMapper.ORDER + 1)
 public class ApplicationExceptionMapper {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ApplicationExceptionMapper.class);

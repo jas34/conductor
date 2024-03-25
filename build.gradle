@@ -28,6 +28,7 @@ ext.githubProjectName = rootProject.name // Change if github project name is not
 
 subprojects {
     tasks.withType(Javadoc).all { enabled = false }
+    version = "local-test"
 }
 
 apply from: "$rootDir/dependencies.gradle"

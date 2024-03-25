@@ -12,14 +12,13 @@
  */
 package com.netflix.conductor.rest.config;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.http.MediaType.TEXT_PLAIN;
 
-@Configuration
+//@Configuration
 public class RestConfiguration implements WebMvcConfigurer {
 
     /**

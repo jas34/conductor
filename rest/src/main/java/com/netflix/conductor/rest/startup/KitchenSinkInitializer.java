@@ -38,7 +38,7 @@ import com.netflix.conductor.common.metadata.tasks.TaskDef;
 import static org.springframework.http.HttpHeaders.CONTENT_TYPE;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
-@Component
+//@Component
 public class KitchenSinkInitializer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KitchenSinkInitializer.class);

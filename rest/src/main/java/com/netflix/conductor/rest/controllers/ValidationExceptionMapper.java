@@ -36,8 +36,8 @@ import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.ValidationException;
 
 /** This class converts Hibernate {@link ValidationException} into http response. */
-@RestControllerAdvice
-@Order(ValidationExceptionMapper.ORDER)
+//@RestControllerAdvice
+//@Order(ValidationExceptionMapper.ORDER)
 public class ValidationExceptionMapper {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ApplicationExceptionMapper.class);
